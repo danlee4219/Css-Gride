@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grid two</title>
+    <style>
+        #box{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(3,100px);
+            gap: 20px;
+            grid-template-areas: 
+            " one one three three"
+            "five six six six"
+            " nine nine nine nine"
+            ;
+
+        }
+
+        #box>div{
+            background-color: rgb(47, 49, 48);
+            border-radius: 10px;
+            padding: 10px;
+        
+        }
+
+        #box>div:nth-child(1){
+            grid-area: one;
+        }
+
+        #box>div:nth-child(2){
+            grid-area: three;
+        }
+
+        #box>div:nth-child(3){
+            grid-area: five;
+        }
+
+        #box>div:nth-child(4){
+            grid-area: six;
+        }
+
+        #box>div:nth-child(5){
+            grid-area: nine;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+        }
+
+         
+
+     
+
+    
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>
+            <p>
+                A
+            </p>
+        </div>
+        <div><p>B</p></div>
+        <div><p>C</p></div>
+        <div><p>D</p></div>
+        <div><p>E</p></div>
+    </div>
+    
+</body>
+</html>

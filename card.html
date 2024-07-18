@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bountyes</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #container{
+            padding: 20px;
+            display: grid;
+            background-color: rgb(240, 233, 226);
+            justify-content: center;
+            grid-template-columns: repeat(3,350px);
+            grid-template-rows: repeat(3,150px);
+            gap: 30px;
+            grid-template-areas: 
+            " one two three"
+            "four five six"
+            "seven eight nine" ;
+        }
+        .box{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px  rgb(174, 172, 172);
+        }
+
+        #container>div:nth-child(1){
+            grid-area: one;
+        }
+        #container>div:nth-child(2){
+            grid-area: two;
+        }
+        #container>div:nth-child(3){
+            grid-area: three;
+        }
+        #container>div:nth-child(4){
+            grid-area: four;
+        }
+        #container>div:nth-child(5){
+            grid-area: five;
+        }
+        #container>div:nth-child(6){
+            grid-area: six;
+        }
+        #container>div:nth-child(7){
+            grid-area: seven;
+        }
+        #container>div:nth-child(8){
+            grid-area: eight;
+        }
+        #container>div:nth-child(9){
+            grid-area: nine;
+        }
+
+        .om{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            
+        }
+        h2{
+            color: goldenrod;
+        }
+        p{
+            color: grey;
+            padding: 11px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Cappuccino</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Americano</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Espresso</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Macchiato</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Mocha</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Coffee Latte</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Piccoio Latte</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Ristretto</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            <div class="box">
+                <div class="om">
+                    <div>
+                        <h1>Affogato</h1>
+                    </div>
+                    <div>
+                        <h2>$49</h2>
+                    </div>
+
+                </div>
+                <p>usage of the internet is becoming more common due to rapid advance.</p>
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

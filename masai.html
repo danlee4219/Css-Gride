@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grid one</title>
+    <style>
+        #box{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,100px);
+            gap: 20px;
+            grid-template-areas: 
+            "one two two four"
+            "five five seven eight"
+            " nine ten eleven eleven"
+            ;
+
+        }
+
+        #box>div{
+            background-color: rgb(0, 128, 94);
+            border-radius: 2px;
+        }
+
+        #box>div:nth-child(1){
+            grid-area: 0ne;
+        }
+
+        #box>div:nth-child(2){
+            grid-area: two;
+        }
+
+        #box>div:nth-child(3){
+            grid-area: four;
+        }
+
+        #box>div:nth-child(4){
+            grid-area: five;
+        }
+
+        #box>div:nth-child(5){
+            grid-area:seven;
+        }
+
+        #box>div:nth-child(6){
+            grid-area: eight;
+        }
+
+        #box>div:nth-child(7){
+            grid-area: nine;
+        }
+
+        #box>div:nth-child(8){
+            grid-area: ten;
+        }
+
+        #box>div:nth-child(9){
+            grid-area: eleven;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

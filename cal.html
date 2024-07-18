@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <style>
+        #main{
+            justify-content: center;
+            
+        }
+        .heading{
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            color: rgb(23, 87, 109);
+        
+        
+        }
+        #cal{
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px 3px rgb(158, 157, 157);
+            margin: auto;
+            padding: 30px;
+            width:270px ;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4,60px);
+            grid-template-rows: repeat(5,70px);
+            gap: 10px;
+            grid-template-areas:
+            "one one one one"
+            "five six seven eight"
+            "nine ten eleven twelve"
+            "thirteen fourteen fifteen sixteen"
+            "seventeen eighteen ninteen twenty"
+            ;
+        }
+        #cal>div{
+            
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px 3px rgb(188, 187, 187);
+        }
+        
+        #cal>div:nth-child(1){
+            grid-area: one;
+        }
+
+        #cal>div:nth-child(2){
+            grid-area: five;
+        }
+
+        #cal>div:nth-child(3){
+            grid-area: six;
+        }
+
+        #cal>div:nth-child(4){
+            grid-area: seven;
+        }
+
+        #cal>div:nth-child(5){
+            background-color: black;
+            grid-area: eight;
+        }
+
+        #cal>div:nth-child(6){
+            grid-area: nine;
+        }
+
+        #cal>div:nth-child(7){
+            grid-area: ten;
+        }
+
+        #cal>div:nth-child(8){
+            grid-area: eleven;
+        }
+
+        #cal>div:nth-child(9){
+            background-color:black;
+            grid-area: twelve;
+        }
+
+        #cal>div:nth-child(1o){
+            grid-area: thirteen;
+        }
+
+        #cal>div:nth-child(11){
+            grid-area: fourteen;
+        }
+
+        #cal>div:nth-child(12){
+            grid-area: fifteen;
+        }
+
+        #cal>div:nth-child(13){
+            background-color: black;
+            grid-area: sixteen;
+        }
+
+        #cal>div:nth-child(14){
+            background-color: rgba(248, 3, 3, 0.926);
+            grid-area: seventeen;
+        }
+
+        #cal>div:nth-child(15){
+            grid-area: eighteen;
+        }
+
+        #cal>div:nth-child(16){
+            background-color: black;
+            grid-area: ninteen;
+        }
+
+        #cal>div:nth-child(17){
+            background-color: black;
+            grid-area: twenty;
+        }
+        p{
+            text-align: center;
+            margin: auto;
+        }
+        .color{
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="heading">
+            <h1>Masai Calculator</h1>
+        </div>
+        <div>
+            <div id="cal">
+                <div><p></p></div>
+                <div><p><b>1</b></p></div>
+                <div><p><b>2</b></p></div>
+                <div><p><b>3</b></p></div>
+                <div class="color"><p><b>+</b></p></div>
+                <div><p><b>4</b></p></div>
+                <div><p><b>5</b></p></div>
+                <div><p><b>6</b></p></div>
+                <div class="color"><p><b>-</b></p></div>
+                <div><p><b>7</b></p></div>
+                <div><p><b>8</b></p></div>
+                <div><p><b>9</b></p></div>
+                <div class="color"><p><b>*</b></p></div>
+                <div class="color"><p><b>C</b></p></div>
+                <div><p><b>0</b></p></div>
+                <div class="color"><p><b>=</b></p></div>
+                <div class="color"><p><b>/</b></p></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>othergride</title>
+    <style>
+        #box{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(2,100px);
+            gap: 10px;
+            grid-template-areas: 
+            "one one three four"
+            "five six three four"
+            ;
+
+
+        }
+
+        #box>div:nth-child(1){
+            grid-area: one;
+        }
+
+        #box>div:nth-child(2){
+            grid-area: three;
+        }
+
+        #box>div:nth-child(3){
+            grid-area: four;
+        }
+
+        #box>div:nth-child(4){
+            grid-area: five;
+        }
+
+        #box>div:nth-child(5){
+            grid-area: six;
+        }
+           
+
+        #box>div{
+            background-color: rgb(47, 49, 48);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p{
+            font-size: 30px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div><p>A</p></div>
+        <div><p>B</p></div>
+        <div><p>E</p></div>
+        <div><p>C</p></div>
+        <div><p>D</p></div>
+
+    </div>
+</body>
+</html>
